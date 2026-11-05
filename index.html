@@ -54,6 +54,7 @@
   #boostBtn.on { transform:scale(.93); filter:brightness(1.3); }
   #muteBtn { left:14px; bottom:calc(env(safe-area-inset-bottom,0px) + 18px); width:40px; height:40px; border-radius:50%; font-size:18px; background:rgba(255,255,255,.12); backdrop-filter:blur(6px); }
 
+  #menu { background:linear-gradient(180deg,rgba(0,0,0,0) 60%,rgba(3,4,12,.55)),#05060f url(og-image.jpg) center top/cover no-repeat; backdrop-filter:none; justify-content:flex-end; padding-bottom:calc(env(safe-area-inset-bottom,0px) + 17vh); }
   .center { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:28px; background:radial-gradient(circle at 50% 45%, rgba(8,10,25,.35), rgba(3,4,12,.88)); backdrop-filter:blur(8px); }
   .title { font-size:min(15vw,72px); font-weight:900; line-height:.95; background:linear-gradient(180deg,#fff,#7ef9ff 55%,#8f7bff); -webkit-background-clip:text; background-clip:text; color:transparent; letter-spacing:-.03em; text-shadow:none; }
   .sub { margin-top:12px; max-width:340px; font-size:15px; line-height:1.5; opacity:.82; }
@@ -132,17 +133,8 @@
 </div>
 
 <div class="center" id="menu">
-  <div class="title">HJORTHAGEN<br>ESCAPE</div>
-  <div class="sub">Outrun the police. Weave through traffic, chain near misses to fill your boost, then smash through everything.</div>
-  <div class="legend">
-    <div><i>🪙</i>Coins = points</div>
-    <div><i>🛡️</i>Shield + shockwave</div>
-    <div><i>⚡</i>Free nitro burst</div>
-    <div><i>💥</i>Boost smashes cars</div>
-  </div>
   <button class="btn" id="startBtn">START RIDE</button>
   <button class="btn ghost" id="lbBtn">🏆 LEADERBOARD</button>
-  <div class="keys">Swipe left / right to steer • Swipe up (or BOOST button) to boost • Swipe down to brake<br>Keyboard: ← → / A D steer • ↑ / W / Space boost • ↓ / S brake • M mute</div>
   <div class="best" id="bestMenu"></div>
 </div>
 
